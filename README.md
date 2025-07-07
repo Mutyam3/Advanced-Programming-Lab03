@@ -77,6 +77,7 @@ torch.onnx.export(
 )
 
 ---
+
 ## Report Highlights
 
 In this lab report (**Lab03 Report.pdf**), we summarize:
