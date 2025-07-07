@@ -54,14 +54,17 @@ In this lab, we:
 
 #### TensorFlow → TensorFlow Lite
 
-- Convert the trained Keras model to `.tflite` format:
-  
+- Convert the trained TensorFlow model to TensorFlow Lite:
+
+  ```python
   converter = tf.lite.TFLiteConverter.from_keras_model(model)
   tflite_model = converter.convert()
   with open('model.tflite', 'wb') as f:
       f.write(tflite_model)
   
-## Export the trained PyTorch model to .onnx format using dummy input:
+#### PyTorch → ONNX
+
+-Export the trained PyTorch model to `.onnx` format using dummy input:
 
 ```python
 dummy_input = torch.randn(1, 784)
@@ -72,6 +75,7 @@ torch.onnx.export(
     input_names=["input"],
     output_names=["output"]
 )
+
 
 
 ## Report Highlights
