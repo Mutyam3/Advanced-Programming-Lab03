@@ -82,3 +82,20 @@ The report Lab03 Report.pdf summarizes:
   - Differences in code structure and development experience between TensorFlow and PyTorch
   - Training and inference speed comparison
   - Ease of model export in each framework
+
+## Outputs
+
+This lab produces the following outputs:
+
+- `model.tflite` – TensorFlow Lite converted model
+- `model.onnx` – ONNX exported PyTorch model
+- Training and inference logs
+- Accuracy and time metrics printed in console
+
+## Authors
+
+This lab was completed by:
+
+- **Prof. Tobias Schaffer** – Lab Supervisor
+- **Mutyam Bhargav Reddy** – Student Implementation
+
