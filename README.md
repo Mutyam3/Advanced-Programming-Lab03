@@ -76,8 +76,7 @@ torch.onnx.export(
     output_names=["output"]
 )
 
----
-
+```markdown
 ## Report Highlights
 
 In this lab report (**Lab03 Report.pdf**), we summarize:
