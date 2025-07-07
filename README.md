@@ -74,24 +74,28 @@ torch.onnx.export(
 )
 
 
-report_highlights:
-  summary: "The report Lab03 Report.pdf summarizes:"
-  details:
-    - "Differences in code structure and development experience"
-    - "Training and inference speed comparison"
-    - "Ease of model export in each framework"
+## Report Highlights
 
-outputs:
-  - file: "model.tflite"
-    description: "TensorFlow Lite converted model"
-  - file: "model.onnx"
-    description: "ONNX exported PyTorch model"
-  - description: "Training and inference logs"
-  - description: "Accuracy and time metrics printed in console"
+The report **Lab03 Report.pdf** summarizes:
 
-authors:
-  - name: "Prof. Tobias Schaffer"
-    role: "Lab Supervisor"
-  - name: "Mutyam Bhargav Reddy"
-    role: "Student Implementation"
+- Differences in code structure and development experience  
+- Training and inference speed comparison  
+- Ease of model export in each framework  
+
+---
+
+## Outputs
+
+- `model.tflite` – TensorFlow Lite converted model  
+- `model.onnx` – ONNX exported PyTorch model  
+- Training and inference logs  
+- Accuracy and time metrics printed in console  
+
+---
+
+## Authors
+
+- **Prof. Tobias Schaffer** – Lab Supervisor  
+- **Mutyam Bhargav Reddy** – Student Implementation
+
 
