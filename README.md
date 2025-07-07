@@ -11,15 +11,15 @@ This repository contains the implementation, training logs, converted models, an
 
 In this lab, we:
 
-✅ Build and train the same neural network model using both TensorFlow and PyTorch.  
-✅ Compare training and inference times as well as performance metrics.  
-✅ Convert the trained models into lightweight formats for deployment (TensorFlow Lite and ONNX).
+1. Build and train the same neural network model using both TensorFlow and PyTorch.  
+2. Compare training and inference times as well as performance metrics.  
+3. Convert the trained models into lightweight formats for deployment (TensorFlow Lite and ONNX).
 
 ---
 
 ## Task Overview
 
-### ✅ Task 1: Model Implementation and Training
+###  Task 1: Model Implementation and Training
 
 - **Dataset:** MNIST handwritten digits (28×28 grayscale images, 10 classes)
 - **Model Architecture:**
@@ -38,7 +38,7 @@ In this lab, we:
 
 ---
 
-### ✅ Task 2: Inference and Evaluation
+###  Task 2: Inference and Evaluation
 
 - Run inference on test data
 - Report:
@@ -50,7 +50,7 @@ In this lab, we:
 
 ---
 
-### ✅ Task 3: Model Conversion
+###  Task 3: Model Conversion
 
 #### TensorFlow → TensorFlow Lite
 
@@ -60,12 +60,10 @@ In this lab, we:
   tflite_model = converter.convert()
   with open('model.tflite', 'wb') as f:
       f.write(tflite_model)
-PyTorch → ONNX
-Export the trained PyTorch model to .onnx format using dummy input:
+  
+## Export the trained PyTorch model to .onnx format using dummy input:
 
-#### PyTorch → ONNX
--Export the trained PyTorch model to .onnx format using dummy input:
-
+```python
 dummy_input = torch.randn(1, 784)
 torch.onnx.export(
     model,
@@ -75,25 +73,25 @@ torch.onnx.export(
     output_names=["output"]
 )
 
-Report Highlights
-The report Lab03 Report.pdf summarizes:
 
-Differences in code structure and development experience
+report_highlights:
+  summary: "The report Lab03 Report.pdf summarizes:"
+  details:
+    - "Differences in code structure and development experience"
+    - "Training and inference speed comparison"
+    - "Ease of model export in each framework"
 
-Training and inference speed comparison
+outputs:
+  - file: "model.tflite"
+    description: "TensorFlow Lite converted model"
+  - file: "model.onnx"
+    description: "ONNX exported PyTorch model"
+  - description: "Training and inference logs"
+  - description: "Accuracy and time metrics printed in console"
 
-Ease of model export in each framework 
+authors:
+  - name: "Prof. Tobias Schaffer"
+    role: "Lab Supervisor"
+  - name: "Mutyam Bhargav Reddy"
+    role: "Student Implementation"
 
-Outputs
-model.tflite – TensorFlow Lite converted model
-
-model.onnx – ONNX exported PyTorch model
-
-Training and inference logs
-
-Accuracy and time metrics printed in console.
-
-Authors
-Prof. Tobias Schaffer (Lab Supervisor)
-
-Mutyam Bhargav Reddy – Student Implementation
