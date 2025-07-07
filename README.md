@@ -64,7 +64,7 @@ In this lab, we:
   
 #### PyTorch → ONNX
 
--Export the trained PyTorch model to `.onnx` format using dummy input:
+- Export the trained PyTorch model to `.onnx` format using dummy input:
 
 ```python
 dummy_input = torch.randn(1, 784)
@@ -77,29 +77,35 @@ torch.onnx.export(
 )
 
 
-
 ## Report Highlights
 
-The report **Lab03 Report.pdf** summarizes:
+In this lab report (**Lab03 Report.pdf**), we summarize:
 
-- Differences in code structure and development experience  
-- Training and inference speed comparison  
-- Ease of model export in each framework  
+- Differences in code structure and development experience
+- Training and inference speed comparison
+- Ease of model export in each framework
+
 
 ---
 
 ## Outputs
 
-- `model.tflite` – TensorFlow Lite converted model  
-- `model.onnx` – ONNX exported PyTorch model  
-- Training and inference logs  
-- Accuracy and time metrics printed in console  
+This lab produces the following outputs:
+
+- `model.tflite` – TensorFlow Lite converted model
+- `model.onnx` – ONNX exported PyTorch model
+- Training and inference logs
+- Accuracy and time metrics printed in console
+
 
 ---
 
 ## Authors
 
-- **Prof. Tobias Schaffer** – Lab Supervisor  
+This lab was completed by:
+
+- **Prof. Tobias Schaffer** – Lab Supervisor
 - **Mutyam Bhargav Reddy** – Student Implementation
+
 
 
